@@ -54,7 +54,7 @@
 git clone https://github.com/It-Intel/Developer-site-react.js/.git
 
 # Переходим в папку
-cd Developer-site-react.js
+cd Developer-site-react.js-main
 
 # Устанавливаем зависимости
 npm install
@@ -227,3 +227,4 @@ const translations = {
 
 
 ---
+
