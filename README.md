@@ -51,10 +51,10 @@
 
 ```bash
 # Клонируем репозиторий
-git clone https://github.com/your-username/portfolio-template.git
+git clone https://github.com/It-Intel/Developer-site-react.js/.git
 
 # Переходим в папку
-cd portfolio-template
+cd Developer-site-react.js
 
 # Устанавливаем зависимости
 npm install
@@ -224,5 +224,6 @@ const translations = {
 ## 🤝 Поддержка
 
 Если у вас есть вопросы по настройке шаблона или вы нашли баг - создавайте issue в репозитории.
+
 
 ---
