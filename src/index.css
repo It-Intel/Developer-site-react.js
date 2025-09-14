@@ -1,0 +1,77 @@
+:root {
+  --theme-primary: #00ff88;
+  --theme-secondary: #0088ff;
+  --theme-accent: #00ff88;
+  --theme-background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 136, 255, 0.05) 50%, rgba(0, 255, 136, 0.1) 100%);
+  --theme-background-solid: #0a1a0f;
+  --theme-text: #ffffff;
+  --theme-card: rgba(0, 0, 0, 0.4);
+  --theme-border: rgba(0, 255, 136, 0.3);
+  --theme-hover: rgba(0, 255, 136, 0.1);
+  --theme-shadow: rgba(0, 255, 136, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--theme-background-solid, #000);
+  color: var(--theme-text, #fff);
+  overflow-x: hidden;
+  cursor: none;
+  transition: background 0.3s ease;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #00ff88, #0088ff);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #00ff88, #0088ff, #ff0088);
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #00ff88, transparent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: transform 0.1s ease;
+}
+
+.cursor-trail {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  background: #00ff88;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.7;
+}
+
